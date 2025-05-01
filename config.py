@@ -1,5 +1,5 @@
-API_ID = 12345678
-API_HASH = "your_api_hash"
-BOT_TOKEN = "your_bot_token"
-ADMIN_IDS = [1355077923, 1407585501]  # ganti dengan ID admin bot kamu
-CHANNEL_ID = -1001234567890  # ganti dengan ID channel admin
+API_ID = 21805250
+API_HASH = "1fb02f75956a2d171527617aafe0c7e1"
+BOT_TOKEN = "7562617150:AAF1QN7kofYVqNnUP-UHYwpBaOZ08dxbyXQ"
+ADMIN_IDS = [1407585501, 6467919046]  # ganti dengan ID admin bot kamu
+CHANNEL_ID = -1001625465798  # ganti dengan ID channel admin
