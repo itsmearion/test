@@ -18,7 +18,7 @@ async def start_handler(client: Client, message: Message):
     await sent.delete()
 
     join_button = InlineKeyboardMarkup([
-        [InlineKeyboardButton("Silakan Join Channel", url="https://t.me/littlenocturne")],
+        [InlineKeyboardButton("Silakan Join Channel", url="https://t.me/iPacarhaechannn")],
         [InlineKeyboardButton("Sudah Join", callback_data="joined")]
     ])
     await message.reply("Silakan join channel terlebih dahulu:", reply_markup=join_button)
