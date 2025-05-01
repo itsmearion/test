@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 import asyncio
-from config import API_ID, API_HASH, BOT_TOKEN, ADMIN_IDS, ADMIN_CHANNEL
+from config import API_ID, API_HASH, BOT_TOKEN, ADMIN_IDS, CHANNEL_ID
 from utils.database import get_all_products, get_all_payments, save_order
 
 app = Client("little_nocturne", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
