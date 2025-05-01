@@ -8,6 +8,6 @@ def register_start(app):
         await message.reply_text(
             "Selamat datang di Little Nocturne. Silakan pilih produk kamu.",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("Join Channel", url="https://t.me/yourchannel")]]
+                [[InlineKeyboardButton("Join Channel", url="https://t.me/iPacarhaechannn")]]
             )
         )
