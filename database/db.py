@@ -20,7 +20,7 @@ conn.commit() conn.close()
 
 def get_payment_methods(): conn = sqlite3.connect("little_nocturne.db") c = conn.cursor() c.execute("SELECT id, name, type, content FROM payment_methods") methods = c.fetchall() conn.close() return methods
 
-Fungsi tambah metode pembayaran (bisa dipakai admin)
+#Fungsi tambah metode pembayaran (bisa dipakai admin)
 
 def add_payment_method(name: str, type_: str, content: str): conn = sqlite3.connect("little_nocturne.db") c = conn.cursor() c.execute("INSERT INTO payment_methods (name, type, content) VALUES (?, ?, ?)", (name, type_, content)) conn.commit() conn.close()
 
