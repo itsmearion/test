@@ -2,15 +2,15 @@ import sqlite3
 
 conn = sqlite3.connect("little_nocturne.db") c = conn.cursor()
 
-Tabel produk
+#Tabel produk
 
 c.execute(""" CREATE TABLE IF NOT EXISTS products ( id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, description TEXT, options TEXT -- JSON string (e.g. ["1 bulan", "3 bulan"]) ) """)
 
-Tabel metode pembayaran
+#Tabel metode pembayaran
 
 c.execute(""" CREATE TABLE IF NOT EXISTS payment_methods ( id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, type TEXT NOT NULL,          -- "link" atau "text" content TEXT NOT NULL        -- URL atau informasi rekening ) """)
 
-Tabel transaksi
+#Tabel transaksi
 
 c.execute(""" CREATE TABLE IF NOT EXISTS transactions ( id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER NOT NULL, username TEXT, product_id INTEGER NOT NULL, product_option TEXT, payment_method_id INTEGER NOT NULL, proof_file_id TEXT, status TEXT DEFAULT 'pending', timestamp DATETIME DEFAULT CURRENT_TIMESTAMP ) """)
 
