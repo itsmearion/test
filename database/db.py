@@ -16,7 +16,7 @@ c.execute(""" CREATE TABLE IF NOT EXISTS transactions ( id INTEGER PRIMARY KEY A
 
 conn.commit() conn.close()
 
-Fungsi ambil metode pembayaran
+#Fungsi ambil metode pembayaran
 
 def get_payment_methods(): conn = sqlite3.connect("little_nocturne.db") c = conn.cursor() c.execute("SELECT id, name, type, content FROM payment_methods") methods = c.fetchall() conn.close() return methods
 
